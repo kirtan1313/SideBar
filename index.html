@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-2 d-flex">
+                    <div>
+                        <h2 class="text-white">logo</h2>
+                    </div>
+                    <div>
+                        <a href="#" class="btn1" id="toggleManu">=</a>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <nav>
+                        <ul class="navlink ">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Blogs</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-3">
+                    <button class="btn">Talk'me</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar" id="sidebar">
+
+    </div>
+    <main>
+
+    </main>
+
+    <script>
+        const toggleManu = document.getElementById('toggleManu')
+        const sidebar = document.getElementById('sidebar')
+
+        toggleManu.addEventListener('click',()=>{
+            sidebar.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
